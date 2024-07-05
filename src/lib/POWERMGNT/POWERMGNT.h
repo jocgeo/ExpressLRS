@@ -111,9 +111,9 @@ public:
             power = firmwareOptions.unlock_higher_power ? MaxPower : HighPower;
         #endif
         #if defined(Regulatory_Domain_EU_CE_2400)
-            if (power > PWR_100mW)
+            if (power > PWR_1000mW)
             {
-                power = PWR_100mW;
+                power = PWR_1000mW;
             }
         #endif
         return power;
